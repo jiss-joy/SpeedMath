@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PercentageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="cursive"
+        android:text="Fraction to Percentage"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/result_percentage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp">
+
+        <TextView
+            android:id="@+id/fraction_num_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/divide_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fraction_num_1"
+            android:text=" / "
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/fraction_num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/divide_operator"
+            android:text="000"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/result_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="6"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="Answer in %"
+        android:inputType="numberDecimal"
+        android:textSize="30sp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/next_btn_fractions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_percentage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+</RelativeLayout>

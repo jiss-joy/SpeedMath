@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Speed Math"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/intermediate_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intermediate Test"
+        android:gravity="center"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_above="@id/basic_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/basic_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100sp"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:text="Basic Test"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
